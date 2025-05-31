@@ -13,22 +13,23 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-2xl font-semibold text-white mb-6">
-              Passionate Developer & Problem Solver
+              Software Developer & Creative Problem Solver
             </h3>
             <p className="text-lg text-navy-300 mb-6">
-              I'm a dedicated developer with a passion for creating innovative solutions 
-              and beautiful user experiences. With a strong foundation in modern web 
-              technologies, I enjoy tackling complex challenges and turning ideas into 
-              reality.
+              I'm a software developer who loves building clean, intuitive digital 
+              experiences and solving tricky problems with code. I enjoy turning ideas 
+              into real, working products using modern web technologies—and learning 
+              something new with every project.
             </p>
             <p className="text-lg text-navy-300 mb-6">
-              When I'm not coding, you can find me exploring new technologies, 
-              contributing to open source projects, or sharing knowledge with the 
-              developer community.
+              Outside of work, I'm usually playing badminton or jamming to music with 
+              my friends (bonus points if we're singing along). I'm always up for 
+              exploring new tools or tech that can make life a little easier—or a lot 
+              more fun.
             </p>
             <p className="text-lg text-navy-300">
-              I'm currently looking for opportunities where I can contribute to 
-              meaningful projects and continue growing as a developer.
+              I'm currently looking for opportunities to work on meaningful projects, 
+              grow as a developer, and collaborate with great teams.
             </p>
           </div>
           
@@ -38,19 +39,19 @@ const About = () => {
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-navy-500 rounded-full mr-3"></span>
-                  <span className="text-navy-300">Location: Your City, Country</span>
+                  <span className="text-navy-300">Location: Pittsburgh, Pennsylvania, USA</span>
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-navy-500 rounded-full mr-3"></span>
-                  <span className="text-navy-300">Experience: X+ years</span>
+                  <span className="text-navy-300">Experience: 4 years</span>
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-navy-500 rounded-full mr-3"></span>
-                  <span className="text-navy-300">Education: Your Degree</span>
+                  <span className="text-navy-300">Education: Masters in Information Systems Management, Carnegie Mellon University</span>
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-navy-500 rounded-full mr-3"></span>
-                  <span className="text-navy-300">Interests: Technology, Design, Innovation</span>
+                  <span className="text-navy-300">Interests: Technology, Badminton, Music and Gardening</span>
                 </li>
               </ul>
             </div>

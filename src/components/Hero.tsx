@@ -7,18 +7,22 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-navy-950 to-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
-          {/* Profile Image Placeholder */}
-          <div className="w-32 h-32 bg-navy-800 rounded-full mx-auto mb-8 flex items-center justify-center border-2 border-navy-600">
-            <span className="text-navy-300 text-lg">Photo</span>
+          {/* Profile Image */}
+          <div className="w-32 h-32 mx-auto mb-8 overflow-hidden rounded-full border-2 border-navy-600">
+            <img 
+              src="/lovable-uploads/fa30050d-cbb1-4d6a-a00d-ea23d3e27bac.png" 
+              alt="Sushma Gadepalli"
+              className="w-full h-full object-cover"
+            />
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
             Hello, I'm{' '}
-            <span className="text-navy-400">Your Name</span>
+            <span className="text-navy-400">Sushma Gadepalli</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-navy-300 mb-8 max-w-3xl mx-auto">
-            A passionate developer creating amazing digital experiences
+            A software developer who cares deeply about performance and design
           </p>
           
           <div className="flex justify-center space-x-6 mb-12">
