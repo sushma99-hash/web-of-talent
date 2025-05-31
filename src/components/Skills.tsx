@@ -26,10 +26,10 @@ const Skills = () => {
     {
       title: "Tools & Others",
       skills: [
-        { name: "Git", level: 90 },
-        { name: "Docker", level: 65 },
-        { name: "AWS", level: 60 },
-        { name: "Figma", level: 70 },
+        { name: "Git", level: 100 },
+        { name: "Docker", level: 85 },
+        { name: "AWS", level: 90 },
+        { name: "Figma", level: 90 },
         { name: "Tableau", level: 85 },
       ]
     }
@@ -74,16 +74,6 @@ const Skills = () => {
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold text-white mb-8">
-            Always Learning
-          </h3>
-          <p className="text-lg text-navy-300 max-w-3xl mx-auto">
-            I'm constantly exploring new technologies and improving my skills. 
-            Currently learning: GraphQL, React Native, and Machine Learning with Python.
-          </p>
         </div>
       </div>
     </section>
