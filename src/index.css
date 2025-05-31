@@ -101,17 +101,33 @@
   }
 }
 
-/* Starry Background Animation */
-@keyframes stars-move {
-  from {
+/* Continuous Starry Background Animation */
+@keyframes stars-move-infinite {
+  0% {
     transform: translateX(0) translateY(0);
   }
-  to {
-    transform: translateX(-1000px) translateY(-1000px);
+  100% {
+    transform: translateX(-100vw) translateY(-100vh);
   }
 }
 
-.stars-layer-1 {
+.starry-bg {
+  position: relative;
+  background: linear-gradient(135deg, #0f172a 0%, #000000 100%);
+}
+
+.starry-bg::before,
+.starry-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.starry-bg::before {
   background-image: 
     radial-gradient(2px 2px at 20px 30px, #eee, transparent),
     radial-gradient(2px 2px at 40px 70px, rgba(255,255,255,0.8), transparent),
@@ -122,14 +138,19 @@
     radial-gradient(2px 2px at 70px 10px, #fff, transparent),
     radial-gradient(1px 1px at 180px 60px, rgba(255,255,255,0.9), transparent),
     radial-gradient(1px 1px at 50px 50px, #eee, transparent),
-    radial-gradient(2px 2px at 110px 20px, rgba(255,255,255,0.5), transparent);
+    radial-gradient(2px 2px at 110px 20px, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 200px 90px, rgba(255,255,255,0.4), transparent),
+    radial-gradient(2px 2px at 250px 120px, #fff, transparent),
+    radial-gradient(1px 1px at 300px 150px, rgba(255,255,255,0.7), transparent),
+    radial-gradient(1px 1px at 350px 180px, #ddd, transparent),
+    radial-gradient(2px 2px at 400px 210px, rgba(255,255,255,0.6), transparent);
   background-repeat: repeat;
-  background-size: 200px 100px;
-  animation: stars-move 20s linear infinite;
+  background-size: 450px 250px;
+  animation: stars-move-infinite 60s linear infinite;
   opacity: 0.8;
 }
 
-.stars-layer-2 {
+.starry-bg::after {
   background-image: 
     radial-gradient(1px 1px at 40px 60px, #fff, transparent),
     radial-gradient(1px 1px at 120px 10px, rgba(255,255,255,0.9), transparent),
@@ -138,23 +159,13 @@
     radial-gradient(2px 2px at 220px 30px, #fff, transparent),
     radial-gradient(1px 1px at 30px 120px, rgba(255,255,255,0.6), transparent),
     radial-gradient(1px 1px at 260px 70px, #ddd, transparent),
-    radial-gradient(2px 2px at 60px 140px, rgba(255,255,255,0.8), transparent);
+    radial-gradient(2px 2px at 60px 140px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1px 1px at 320px 180px, rgba(255,255,255,0.5), transparent),
+    radial-gradient(2px 2px at 380px 220px, #fff, transparent),
+    radial-gradient(1px 1px at 420px 260px, rgba(255,255,255,0.4), transparent),
+    radial-gradient(1px 1px at 460px 300px, #eee, transparent);
   background-repeat: repeat;
-  background-size: 300px 150px;
-  animation: stars-move 30s linear infinite;
+  background-size: 500px 350px;
+  animation: stars-move-infinite 90s linear infinite;
   opacity: 0.6;
-}
-
-.stars-layer-3 {
-  background-image: 
-    radial-gradient(2px 2px at 100px 25px, rgba(255,255,255,0.5), transparent),
-    radial-gradient(3px 3px at 200px 75px, rgba(255,255,255,0.3), transparent),
-    radial-gradient(1px 1px at 300px 120px, rgba(255,255,255,0.4), transparent),
-    radial-gradient(2px 2px at 50px 150px, rgba(255,255,255,0.3), transparent),
-    radial-gradient(1px 1px at 350px 40px, rgba(255,255,255,0.5), transparent),
-    radial-gradient(3px 3px at 150px 180px, rgba(255,255,255,0.2), transparent);
-  background-repeat: repeat;
-  background-size: 400px 200px;
-  animation: stars-move 50s linear infinite;
-  opacity: 0.4;
 }

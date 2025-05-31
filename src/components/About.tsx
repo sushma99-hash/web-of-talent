@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-navy-900">
+    <section id="about" className="py-20 starry-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
@@ -18,7 +18,7 @@ const About = () => {
             <p className="text-lg text-navy-300 mb-6">
               I'm a software developer who loves building clean, intuitive digital 
               experiences and solving tricky problems with code. I enjoy turning ideas 
-              into real, working products using modern web technologies—and learning 
+              into real, working products using modern web technologies instead learning 
               something new with every project.
             </p>
             <p className="text-lg text-navy-300 mb-6">
@@ -27,14 +27,13 @@ const About = () => {
               exploring new tools or tech that can make life a little easier—or a lot 
               more fun.
             </p>
-            <p className="text-lg text-navy-300">
+            <p className="text-lg text-navy-300 mb-8">
               I'm currently looking for opportunities to work on meaningful projects, 
               grow as a developer, and collaborate with great teams.
             </p>
-          </div>
-          
-          <div className="space-y-6">
-            <div>
+
+            {/* Merged Quick Facts */}
+            <div className="space-y-3 bg-navy-900/50 p-6 rounded-lg border border-navy-800">
               <h4 className="text-xl font-semibold text-white mb-4">Quick Facts</h4>
               <ul className="space-y-3">
                 <li className="flex items-center">
@@ -54,6 +53,15 @@ const About = () => {
                   <span className="text-navy-300">Interests: Technology, Badminton, Music and Gardening</span>
                 </li>
               </ul>
+            </div>
+          </div>
+          
+          <div className="flex justify-center">
+            {/* Placeholder for video/picture */}
+            <div className="w-80 h-80 bg-navy-800 rounded-lg flex items-center justify-center border border-navy-700">
+              <span className="text-navy-400 text-center">
+                Video or Picture<br />Coming Soon
+              </span>
             </div>
           </div>
         </div>

@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-black">
+    <section id="contact" className="py-20 starry-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Get In Touch</h2>
@@ -53,7 +53,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white">Email</h4>
-                  <p className="text-navy-300">your.email@example.com</p>
+                  <p className="text-navy-300">sushma15729@gmail.com</p>
                 </div>
               </div>
               
@@ -82,12 +82,12 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-white">LinkedIn</h4>
                   <a 
-                    href="https://linkedin.com/in/yourusername" 
+                    href="https://www.linkedin.com/in/sushma-gadepalli-81358a163/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-navy-400 hover:text-navy-300 flex items-center"
                   >
-                    linkedin.com/in/yourusername
+                    linkedin.com/in/sushma-gadepalli
                     <ArrowUpRight size={16} className="ml-1" />
                   </a>
                 </div>
@@ -108,7 +108,7 @@ const Contact = () => {
           
           {/* Contact Form */}
           <div>
-            <form onSubmit={handleSubmit} className="bg-navy-900 rounded-xl shadow-lg p-8 border border-navy-800">
+            <form onSubmit={handleSubmit} className="bg-navy-900/80 rounded-xl shadow-lg p-8 border border-navy-800">
               <h3 className="text-2xl font-semibold text-white mb-6">
                 Send a Message
               </h3>

@@ -11,17 +11,15 @@ const Skills = () => {
         { name: "JavaScript", level: 95 },
         { name: "HTML/CSS", level: 90 },
         { name: "Tailwind CSS", level: 80 },
-        { name: "Next.js", level: 75 },
       ]
     },
     {
       title: "Backend Technologies",
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Express.js", level: 80 },
+        { name: "Java", level: 90 },
+        { name: "Spring Microservices", level: 90 },
+        { name: "SQL", level: 90 },
         { name: "Python", level: 70 },
-        { name: "MongoDB", level: 75 },
-        { name: "PostgreSQL", level: 70 },
         { name: "REST APIs", level: 85 },
       ]
     },
@@ -32,14 +30,13 @@ const Skills = () => {
         { name: "Docker", level: 65 },
         { name: "AWS", level: 60 },
         { name: "Figma", level: 70 },
-        { name: "Jest", level: 75 },
-        { name: "Webpack", level: 65 },
+        { name: "Tableau", level: 85 },
       ]
     }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-navy-900">
+    <section id="skills" className="py-20 starry-bg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Skills & Technologies</h2>
@@ -53,7 +50,7 @@ const Skills = () => {
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="bg-black rounded-xl p-6 border border-navy-800"
+              className="bg-navy-900/80 rounded-xl p-6 border border-navy-800"
             >
               <h3 className="text-xl font-semibold text-white mb-6 text-center">
                 {category.title}

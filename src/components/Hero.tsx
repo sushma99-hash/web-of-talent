@@ -4,17 +4,7 @@ import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-navy-950 to-black relative overflow-hidden">
-      {/* Animated Starry Background */}
-      <div className="absolute inset-0">
-        {/* Layer 1: Small fast stars */}
-        <div className="stars-layer-1 absolute inset-0"></div>
-        {/* Layer 2: Medium slower stars */}
-        <div className="stars-layer-2 absolute inset-0"></div>
-        {/* Layer 3: Large slowest stars */}
-        <div className="stars-layer-3 absolute inset-0"></div>
-      </div>
-
+    <section id="home" className="min-h-screen flex items-center justify-center starry-bg relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in">
           {/* Profile Image */}
@@ -45,7 +35,7 @@ const Hero = () => {
               <Github size={24} className="text-white" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sushma-gadepalli-81358a163/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-navy-800 rounded-full shadow-lg hover:bg-navy-700 transition-all duration-300"
@@ -53,7 +43,7 @@ const Hero = () => {
               <Linkedin size={24} className="text-white" />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:sushma15729@gmail.com"
               className="p-3 bg-navy-800 rounded-full shadow-lg hover:bg-navy-700 transition-all duration-300"
             >
               <Mail size={24} className="text-white" />
