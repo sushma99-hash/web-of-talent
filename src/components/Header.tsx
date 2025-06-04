@@ -1,32 +1,40 @@
 
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Skills', href: '/skills' },
   ];
 
+  const isActive = (href: string) => location.pathname === href;
+
   return (
-    <header className="fixed top-0 left-0 right-0 bg-navy-950/95 backdrop-blur-sm border-b border-navy-800 z-50">
+    <header className="fixed top-0 left-0 right-0 bg-navy-900/95 backdrop-blur-sm border-b border-navy-700 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
-                className="text-navy-300 hover:text-white transition-colors duration-200"
+                to={item.href}
+                className={`transition-colors duration-200 ${
+                  isActive(item.href) 
+                    ? 'text-white font-medium' 
+                    : 'text-navy-300 hover:text-white'
+                }`}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -41,16 +49,20 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-navy-800">
+          <nav className="md:hidden py-4 border-t border-navy-700">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
-                className="block py-2 text-navy-300 hover:text-white transition-colors duration-200"
+                to={item.href}
+                className={`block py-2 transition-colors duration-200 ${
+                  isActive(item.href) 
+                    ? 'text-white font-medium' 
+                    : 'text-navy-300 hover:text-white'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
         )}

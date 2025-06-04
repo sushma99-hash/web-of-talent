@@ -1,29 +1,25 @@
 
 import React from 'react';
-import { Github } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
-      githubUrl: "https://github.com/username/project",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop"
+      title: "GlucoVista – CGM Market Analysis",
+      description: "Analyzed Reddit and Twitter data using NLP (stemming, lemmatization), performed sentiment/topic modeling to identify top glucose monitoring devices and customer‐preferred features, guiding strategic product positioning.",
+      technologies: ["Python", "NLP", "Sentiment Analysis", "Topic Modeling", "Data Analysis"],
+      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      technologies: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
-      githubUrl: "https://github.com/username/project",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop"
+      title: "Cloud Microservices Platform",
+      description: "Five Spring Boot/Docker microservices deployed on AWS EKS, communicating via Kafka and REST, with MongoDB persistence, Resilience4j circuit breakers, Prometheus/Grafana monitoring, and CI/CD/chaos testing under a DDD‐driven, scalable architecture.",
+      technologies: ["Spring Boot", "Docker", "AWS EKS", "Kafka", "MongoDB", "Resilience4j", "Prometheus", "Grafana"],
+      image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=500&h=300&fit=crop"
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      technologies: ["React", "OpenWeather API", "Chart.js", "CSS3"],
-      githubUrl: "https://github.com/username/project",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop"
+      title: "NewsApp – Distributed News Application",
+      description: "Java/Tomcat web service containerized on GitHub Codespaces with MongoDB Atlas logging and a Bootstrap JSP dashboard, paired with an Android app (EditText, RecyclerView, ProgressBar) for real‐time Guardian news search and display.",
+      technologies: ["Java", "Tomcat", "MongoDB Atlas", "Bootstrap", "JSP", "Android", "REST API"],
+      image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=500&h=300&fit=crop"
     },
   ];
 
@@ -60,7 +56,7 @@ const Projects = () => {
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
@@ -69,18 +65,6 @@ const Projects = () => {
                       {tech}
                     </span>
                   ))}
-                </div>
-                
-                <div className="flex justify-center">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center px-4 py-2 border border-navy-600 text-navy-300 rounded-lg hover:bg-navy-800 transition-colors duration-300"
-                  >
-                    <Github size={16} className="mr-2" />
-                    Code
-                  </a>
                 </div>
               </div>
             </div>

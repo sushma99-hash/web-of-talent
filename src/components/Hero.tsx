@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -16,9 +16,9 @@ const Hero = () => {
             />
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Hello, I'm{' '}
-            <span className="text-navy-400">Sushma Gadepalli</span>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+            <span className="text-gray-400">Hello, I'm</span>{' '}
+            <span className="text-white">Sushma Gadepalli</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-navy-300 mb-8 max-w-3xl mx-auto">
@@ -52,7 +52,7 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#projects"
+              href="/projects"
               className="px-8 py-3 bg-navy-600 text-white rounded-lg hover:bg-navy-500 transition-colors duration-300"
             >
               View My Work
@@ -65,10 +65,6 @@ const Hero = () => {
               Download Resume
             </a>
           </div>
-        </div>
-        
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown size={24} className="text-navy-400" />
         </div>
       </div>
     </section>
