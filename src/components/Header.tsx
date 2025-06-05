@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -17,7 +16,7 @@ const Header = () => {
   const isActive = (href: string) => location.pathname === href;
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-navy-900/95 backdrop-blur-sm border-b border-navy-700 z-50">
+    <header className="fixed top-0 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-gray-800 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           
@@ -49,7 +48,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-navy-700">
+          <nav className="md:hidden py-4 border-t border-gray-800">
             {navItems.map((item) => (
               <Link
                 key={item.name}
