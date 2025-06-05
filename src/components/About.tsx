@@ -3,8 +3,20 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 starry-bg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section 
+      id="about" 
+      className="py-20 relative min-h-screen"
+      style={{
+        backgroundImage: 'url(/lovable-uploads/c9329b75-9239-4718-aa3d-d145034ac1d0.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/70"></div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <div className="w-24 h-1 bg-navy-500 mx-auto"></div>
@@ -31,9 +43,11 @@ const About = () => {
               I'm currently looking for opportunities to work on meaningful projects, 
               grow as a developer, and collaborate with great teams.
             </p>
-
-            {/* Merged Quick Facts */}
-            <div className="space-y-3 bg-navy-900/50 p-6 rounded-lg border border-navy-800">
+          </div>
+          
+          <div className="flex justify-center">
+            {/* Quick Facts section moved here */}
+            <div className="space-y-3 bg-navy-900/80 p-6 rounded-lg border border-navy-800 backdrop-blur-sm">
               <h4 className="text-xl font-semibold text-white mb-4">Quick Facts</h4>
               <ul className="space-y-3">
                 <li className="flex items-center">
@@ -53,15 +67,6 @@ const About = () => {
                   <span className="text-navy-300">Interests: Technology, Badminton, Music and Gardening</span>
                 </li>
               </ul>
-            </div>
-          </div>
-          
-          <div className="flex justify-center">
-            {/* Placeholder for video/picture */}
-            <div className="w-80 h-80 bg-navy-800 rounded-lg flex items-center justify-center border border-navy-700">
-              <span className="text-navy-400 text-center">
-                Video or Picture<br />Coming Soon
-              </span>
             </div>
           </div>
         </div>
