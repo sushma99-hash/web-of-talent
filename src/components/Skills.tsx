@@ -36,7 +36,10 @@ const Skills = () => {
   ];
 
   return (
-    <section className="min-h-screen starry-bg py-20">
+    <section 
+      className="starry-bg py-20"
+      style={{ minHeight: 'calc(100vh - 80px)' }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Skills & Technologies</h2>
