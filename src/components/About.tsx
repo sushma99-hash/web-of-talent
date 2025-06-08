@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const About = () => {
@@ -7,7 +6,7 @@ const About = () => {
       id="about" 
       className="relative"
       style={{
-        height: 'calc(100vh - 80px)', // Subtract header height
+        minHeight: '100vh', // Full viewport height
         backgroundImage: 'url(/lovable-uploads/c9329b75-9239-4718-aa3d-d145034ac1d0.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -17,7 +16,7 @@ const About = () => {
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/70"></div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex items-center py-20">
         <div className="w-full">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
