@@ -8,7 +8,8 @@ const About = () => {
       className="relative"
       style={{
         minHeight: 'calc(100vh - 80px)', // Full viewport height minus header
-        backgroundImage: 'url(/lovable-uploads/c9329b75-9239-4718-aa3d-d145034ac1d0.png)',
+        // backgroundImage: 'url(/lovable-uploads/c9329b75-9239-4718-aa3d-d145034ac1d0.png)',
+        backgroundImage: `url(${import.meta.env.BASE_URL}lovable-uploads/c9329b75-9239-4718-aa3d-d145034ac1d0.png)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

@@ -9,10 +9,15 @@ const Hero = () => {
         <div className="animate-fade-in">
           {/* Profile Image */}
           <div className="w-32 h-32 mx-auto mb-8 overflow-hidden rounded-full border-2 border-navy-600">
-            <img 
+            {/* <img 
               src="/lovable-uploads/fa30050d-cbb1-4d6a-a00d-ea23d3e27bac.png" 
               alt="Sushma Gadepalli"
               className="w-full h-full object-cover"
+            /> */}
+            <img
+            src={`${import.meta.env.BASE_URL}lovable-uploads/fa30050d-cbb1-4d6a-a00d-ea23d3e27bac.png`}
+            alt="Sushma Gadepalli"
+            className="w-full h-full object-cover"
             />
           </div>
           
