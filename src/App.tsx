@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import NotFound from "./pages/NotFound";
+import { HashRouter } from 'react-router-dom';
 
 const queryClient = new QueryClient();
 
@@ -19,7 +20,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <HashRouter>
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-1">
@@ -33,7 +34,7 @@ const App = () => (
           </main>
           <Footer />
         </div>
-      </BrowserRouter>
+        </HashRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
