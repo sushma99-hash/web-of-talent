@@ -33,13 +33,13 @@ const About = () => {
               <p className="text-lg text-navy-300 mb-4">
                 I'm a software developer who loves building clean, intuitive digital 
                 experiences and solving tricky problems with code. I enjoy turning ideas 
-                into real, working products using modern web technologies instead learning 
+                into real, working products using modern web technologies instead, learning 
                 something new with every project.
               </p>
               <p className="text-lg text-navy-300 mb-4">
                 Outside of work, I'm usually playing badminton or jamming to music with 
                 my friends (bonus points if we're singing along). I'm always up for 
-                exploring new tools or tech that can make life a little easier—or a lot 
+                exploring new tools or tech that can make life a little easier, or a lot 
                 more fun.
               </p>
               <p className="text-lg text-navy-300 mb-6">

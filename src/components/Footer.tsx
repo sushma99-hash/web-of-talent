@@ -12,7 +12,7 @@ const Footer = () => {
           
           <div className="flex space-x-4">
             <a
-              href="https://github.com"
+              href="https://github.com/sushma99-hash"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 bg-navy-800 rounded-full hover:bg-navy-700 transition-colors duration-300 border border-navy-700"

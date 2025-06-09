@@ -64,7 +64,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-white">GitHub</h4>
                   <a 
-                    href="https://github.com/yourusername" 
+                    href="https://github.com/sushma99-hash" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-navy-400 hover:text-navy-300 flex items-center"
@@ -96,7 +96,7 @@ const Contact = () => {
             
             <div className="mt-8">
               <a
-                href="/resume.pdf"
+                href={`${import.meta.env.BASE_URL}Sushma_Gadepalli_Backend.pdf`}
                 target="_blank"
                 className="inline-flex items-center px-6 py-3 bg-navy-600 text-white rounded-lg hover:bg-navy-500 transition-colors duration-300"
               >

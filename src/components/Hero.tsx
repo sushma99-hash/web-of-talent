@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -32,7 +33,7 @@ const Hero = () => {
           
           <div className="flex justify-center space-x-6 mb-12">
             <a
-              href="https://github.com"
+              href="https://github.com/sushma99-hash"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-navy-800 rounded-full shadow-lg hover:bg-navy-700 transition-all duration-300"
@@ -56,14 +57,17 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            {/* <a
               href="/projects"
               className="px-8 py-3 bg-navy-600 text-white rounded-lg hover:bg-navy-500 transition-colors duration-300"
             >
               View My Work
-            </a>
+            </a> */}
+            <Link to="/projects" className="px-8 py-3 bg-navy-600 text-white rounded-lg hover:bg-navy-500 transition-colors duration-300">
+              View My Work
+            </Link>
             <a
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}Sushma_Gadepalli_Backend.pdf`}
               target="_blank"
               className="px-8 py-3 border-2 border-navy-600 text-navy-400 rounded-lg hover:bg-navy-600 hover:text-white transition-colors duration-300"
             >
